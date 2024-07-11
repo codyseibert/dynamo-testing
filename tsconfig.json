@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": false,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "types": ["node"],
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "ts-node": {
+    "files": true,
+    "require": ["tsconfig-paths/register"]
+  }
+}
